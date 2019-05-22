@@ -1,2 +1,2 @@
 # IFF_2018-2020
-This is the GitHub repository hosting the code for the IFF website. 
+Same as the IFF 2019 website, but without responsive design because bootstrap is baaad
