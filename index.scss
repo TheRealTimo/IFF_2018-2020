@@ -1,0 +1,19 @@
+@import '_common';
+
+.wrapper {
+  @include wrapper(60%, 400px, 5%);
+  @extend %text-standard;
+
+  img#logo {
+    @include img-scale(100%);
+  }
+
+  div.social-container {
+    margin: 10px auto auto;
+    width: 90%;
+
+    div {
+      @extend %transbutton;
+    }
+  }
+}

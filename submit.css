@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://wiff.tk/static/Montserrat-Regular.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://wiff.tk/static/Montserrat-Bold.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+.wrapper .submit, body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffffff; }
+
+.wrapper .submit * {
+  border: none !important;
+  background-color: transparent !important; }
+
+.wrapper .submit {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.wrapper .submit {
+  border-radius: 30px;
+  border: solid 1px white;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.5s ease; }
+  .wrapper .submit:hover {
+    background-color: rgba(0, 0, 0, 0.6); }
+  .wrapper .submit * {
+    margin: 8px 10px; }
+
+body {
+  background-color: black; }
+
+.background {
+  position: fixed;
+  right: 0;
+  top: -18%;
+  width: 100%;
+  min-height: 100%;
+  z-index: -3; }
+
+.darkener {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  width: 90%;
+  max-width: 800px; }
+  .wrapper img#logo {
+    margin: auto;
+    display: block;
+    width: 25%; }
+  .wrapper .content {
+    display: block; }
+    .wrapper .content a {
+      color: white; }
+  .wrapper .submit {
+    margin: auto auto;
+    max-width: 200px; }
+    .wrapper .submit a {
+      color: white;
+      text-decoration: none;
+      padding: 0 55px; }
+
+.howto-gallery {
+  width: 80%;
+  margin: auto; }
+  .howto-gallery .gallery {
+    padding: auto;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 200px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .howto-gallery .gallery svg,
+    .howto-gallery .gallery img {
+      margin: 10%;
+      width: 80%;
+      height: 100px; }
+    .howto-gallery .gallery svg {
+      fill: #eee; }
+    .howto-gallery .gallery a:any-link {
+      color: #ddd; }
+    .howto-gallery .gallery .desc {
+      color: #ddd;
+      padding: 15px;
+      text-align: center; }
+
+#guidelines {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  height: 60%;
+  top: 20%;
+  left: 25%;
+  padding: 1%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  #guidelines:target {
+    opacity: 1;
+    pointer-events: auto; }

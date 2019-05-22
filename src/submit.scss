@@ -1,0 +1,92 @@
+@import '_common';
+
+body {
+  @extend %text-standard;
+}
+
+.wrapper {
+  @include wrapper(90%, 800px, 0%);
+
+  img#logo {
+    @include img-scale(25%)
+  }
+  
+  .content {
+    display: block;
+    a {
+      color: white;
+    }
+  }
+
+  .submit {
+    @extend %transbutton;
+    margin: auto auto;
+    max-width: 200px;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0 55px;
+    }
+  }
+}
+
+.howto-gallery {
+
+  width: 80%;
+
+  margin: auto;
+
+  .gallery {
+    padding: auto;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 200px;
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    svg,
+    img {
+      margin: 10%;
+      width: 80%;
+      height: 100px;
+    }
+
+    svg {
+      fill: #eee;
+    }
+
+    a:any-link {
+      color: #ddd;
+    }
+
+    .desc {
+      color: #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}
+
+#guidelines {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  height: 60%;
+  top: 20%;
+  left: 25%;
+  padding: 1%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:target {
+      opacity: 1;
+      pointer-events: auto;
+  }
+
+}
